@@ -36,10 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         plotOptions: {
             series: {
-                groupPadding: 0.1,
-                dataLabels: {
-                    enabled: true
-                }
+                groupPadding: 0.1
             }
         },
         legend: {
@@ -101,7 +98,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 plotOptions: {
                     series: {
-                        groupPadding: 0.2
+                        groupPadding: 0.2,
+                        dataLabels: {
+                            enabled: false
+                        }
                     }
                 }
               }
