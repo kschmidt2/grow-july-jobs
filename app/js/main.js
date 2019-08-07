@@ -32,14 +32,18 @@ document.addEventListener('DOMContentLoaded', function () {
             text: null
         },
         data: {
-            googleSpreadsheetKey: '1YOKb5l2VM4aAB2r20N_1aT_1vEajYrP3U-U3A6lZbC0'
+            googleSpreadsheetKey: '1VrbE0O3ErwXRkCcwzxdQZkxwAT7oSaPSplkvqneCzNk'
+        },
+        plotOptions: {
+            series: {
+                groupPadding: 0.1,
+                dataLabels: {
+                    enabled: true
+                }
+            }
         },
         legend: {
-            align: 'right',
-            symbolRadius: 0,
-            verticalAlign: 'top',
-            x: 10,
-            itemMarginTop: -10
+            enabled: false,
         },
         xAxis: {
             labels: {
@@ -54,7 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
             labels: {
                 useHTML: true,
                 overflow: 'allow'
-            }
+            },
+            max: 80000,
+            tickAmount: 6
         },
         credits: {
             enabled: false
@@ -70,7 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
               },
               chartOptions: {
                 chart: {
-                  spacingRight: 10
+                  spacingRight: 0,
+                  spacingLeft: 0
                 },
                 legend: {
                     align: 'left',
@@ -78,6 +85,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 tooltip: {
                     enabled: false
+                },
+                xAxis: {
+                    labels: {
+                        reserveSpace: false,
+                        x: 40,
+                        y:-15,
+                        align: 'left'
+                    }
+                },
+                yAxis: {
+                    min: -10000,
+                    max: 70000,
+                    tickAmount: 9
+                },
+                plotOptions: {
+                    series: {
+                        groupPadding: 0.2
+                    }
                 }
               }
             }]

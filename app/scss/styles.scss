@@ -22,10 +22,11 @@ $breakpoint-lg: 717px;
 
 @import "css-reset";
 @import "colors";
-@import "type";
-@import "highcharts";
 
 .chart-area {
+  @import "type";
+  @import "highcharts";
+
   // background-color: lightgray;
   background-size: 100px;
   background-repeat: no-repeat;
@@ -33,6 +34,7 @@ $breakpoint-lg: 717px;
     url(https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_leaves.1562793463706.png);
   background-position: bottom right;
   max-width: 660px;
+  font-family: $font-stack;
 
   & a {
     border-bottom: 1px solid $green-primary;
@@ -46,7 +48,7 @@ $breakpoint-lg: 717px;
 
   & .chart-container {
     width: 100%;
-    height: 300px;
+    height: 650px;
     margin-top: -10px;
     @include sm-md-xl {
       height: 400px;
@@ -56,6 +58,32 @@ $breakpoint-lg: 717px;
   & .grow-logo {
     width: 214px;
     margin-top: 20px;
+  }
+
+  & .highcharts-yaxis-grid {
+    & path:nth-child(2) {
+      stroke: #000;
+    }
+  }
+
+  @include x-small {
+    & .highcharts-yaxis-grid {
+      & path:nth-child(2) {
+        opacity: 1;
+      }
+      & path {
+        opacity: 0;
+      }
+    }
+  
+    & .highcharts-yaxis-labels {
+      & span:nth-child(2) {
+        opacity: 1 !important;
+      }
+      & span {
+        opacity: 0 !important;
+      }
+    }
   }
   
 }

@@ -1,16 +1,14 @@
 $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
 
-.chart-area {
-    font-family: $font-stack;
 
-    & .chart-head {
+    .chart-head {
         fill: $slate-secondary-6;
         font-size: 28px;
         font-weight: 600;
         margin-bottom: 10px;
     }
 
-    & .chart-subhead {
+    .chart-subhead {
         fill: $slate-secondary-6;
         font-size: 16px;
         line-height: 20px;
@@ -18,7 +16,7 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
         max-width: 600px;
     }
 
-    & .chart-title, & .chart-title-social {
+    .chart-title, & .chart-title-social {
         font-weight: 600;
         text-transform: uppercase;
         font-size: 14px;
@@ -30,7 +28,7 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
         }
     }
 
-    & .chart-note {
+    .chart-note {
         fill: $slate-secondary-5;
         font-size: 14px;
         line-height: 18px;
@@ -41,7 +39,7 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
         }
     }
 
-    & .chart-source, .chart-credit {
+    .chart-source, .chart-credit {
         font-size: 9.5px;
         line-height: 12px;
         text-transform: uppercase;
@@ -54,7 +52,7 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
         }
     }
 
-    & .chart-credit {
+    .chart-credit {
         &:before {
             content: "Graphic: ";
         }
@@ -63,7 +61,7 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
         }
     }
 
-    & .chart-source {
+    .chart-source {
         &:before {
             content: "Source: ";
         }
@@ -73,11 +71,11 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
           } 
     }
 
-    & .strong {
+    .strong {
         font-weight: 600;
     }
 
-    & .highcharts-annotation-label {
+    .highcharts-annotation-label {
         font-size: 14px;
         line-height: 18px;
         fill: $slate-secondary-5;
@@ -89,4 +87,3 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
             }
         }
     }
-}

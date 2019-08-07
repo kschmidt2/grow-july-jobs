@@ -64,7 +64,6 @@
   /* Axes */
   .highcharts-axis-line {
     fill: none;
-    stroke: $slate-secondary-6;
   }
   
   .highcharts-yaxis .highcharts-axis-line {
@@ -87,9 +86,21 @@
     & span:first-child {
       &:after {
         content: "%";
+      }
     }
+    @include x-small {
+      & span:first-child {
+        &:after {
+          content: "";
+        }
+      }
+      & span:nth-child(2) {
+        &:after {
+          content: "%";
+      }
     }
   }
+}
   
   .highcharts-grid-line {
     fill: none;
@@ -273,8 +284,9 @@
   }
   
   .highcharts-data-label {
-    font-size: 0.9em;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+    // transform: translate(0,2px);
   }
   
   .highcharts-data-label-box {
